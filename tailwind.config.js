@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        "paysage": "url('/src/assets/pasage.jpg')",
+        "paysage_t": "url('/src/assets/t.jpg')",
+      }
+    },
   },
   plugins: [],
 }

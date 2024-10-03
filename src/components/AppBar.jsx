@@ -3,23 +3,40 @@ import fantaLogo from "../assets/R-removebg-preview.png"
 
 const AppBar = () => {
     return (
-       <div className="bg-white h-24 w-full absolute top-0 flex p-3 text-black justify-between font-bold">
-            <div className="h-full flex items-center gap-5 text-xl " >
-                <img className="h-full" src={fantaLogo} alt="" />
-                <p>My fanta app</p>
-            </div>
-            <div className="flex items-center gap-16 pr-20 ">
-                <a className="text-black text-xl" href="contact">
-                    <p>Contact</p>
-                </a>
-                <a className="text-black text-xl" href="about">
-                    <p>about</p>
-                </a>
-                <a className="text-black text-xl" href="book">
-                    <p>book </p>
-                </a>
-            </div>
-       </div>
+        <div className=" h-16 w-full z-50 absolute top-0 flex p-3 text-black justify-center font-bold">
+            <div className="flex w-3/5 justify-between">
+                <div className="h-full flex items-center gap-5 text-xl " >
+                    <img className="h-full" src={fantaLogo} alt="" />
+                    
+                </div>
+                <div className="flex items-center space-x-10 list-none">
+                    <li>
+                        <a className="text-base font-bold text-white hover:text-gray-900" href="contact">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li>
+                        <a className="text-base font-bold text-white hover:text-gray-900"href="about">
+                            GALLERY
+                        </a>
+                    </li>
+                    <li>
+                        <a className="text-base font-bold text-white hover:text-gray-900" href="book">
+                            PRICING
+                        </a>
+                    </li>
+                    
+                    
+                    
+
+                </div> 
+                <div>
+                    <button className="bg-white hover:bg-gray-100 py-2 px-6 hover:border-transparent rounded-3xl shadow-lg border border-transparent">
+                        book 
+                    </button>
+                </div>          
+            </div> 
+        </div>
     )
 }
 export default AppBar
